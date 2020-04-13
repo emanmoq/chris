@@ -555,6 +555,10 @@ transition: .5s all;
 .BlogCarousel{
     margin-top:45px;
 }
+.BlogCarousel .owl-stage-outer{
+    height:500px;
+    padding:10px;
+}
 .BlogItem .card{
     border:0;
 
@@ -619,6 +623,7 @@ color:#5842dd
     display: block;
     height:36px;
     text-align: center;
+    box-shadow: 0 2px 13px rgba(35, 148, 224, .5)
 }
 .readMore:hover{
     background-color:#2394E0
@@ -690,7 +695,6 @@ color:#5842dd
             opacity: 0.68;
             font-size: 12px !important;
             font-weight: 500;
-            color: #677294 !important;
         }
         .sendMessage{
             padding:8px 19px;
