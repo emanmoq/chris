@@ -9,14 +9,11 @@ jQuery(function ($) {
     scrollTop = $(window).scrollTop();
 
     if (scrollTop > $('header').height()) {
-      $(".scrollNav").animate({ opacity:1 }, 1000);
+      $(".scrollNav").animate({ opacity:1 }, 500);
       $('header').addClass('scrollNav');
-
-
     }
 
     else {
-
       $('header').removeClass('scrollNav');
       $(".scrollNav").css("opacity","0");
 
