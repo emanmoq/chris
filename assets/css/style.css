@@ -557,6 +557,7 @@ transition: .5s all;
 }
 .BlogItem .card{
     border:0;
+
 }
 
 .BlogItem .card-body{
@@ -741,6 +742,7 @@ color:#5842dd
             background-repeat: no-repeat;
             font-family: 'Avenir';
             position: relative;
+            margin-top:143px;
         }
         .footerLogo{
             width:45px;
