@@ -728,6 +728,7 @@ color:#5842dd
            top: 6%;
            z-index: 2;
            height: 44px;
+           line-height: 29px;
         }
         .subscribe .form-control{
             height: 50px;
