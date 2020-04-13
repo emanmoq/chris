@@ -129,17 +129,18 @@ top:50px;
     box-shadow: 0 2px 13px rgba(35, 148, 224, .5);
     width: 151px;
     border-radius: 24.5px;
-    background-image: linear-gradient(250deg, #443FE4 , #2394E0);
+    color: #2394E0;
+    background-color: #ffffff;
     font-weight: 900;
-    color: #ffffff;
     text-align: center;
     margin-top:21px;
     transition: .5s all;
 }
 .contactBtn:hover{
-    color: #2394E0;
-    background-color: #ffffff;
-    background-image: none;
+    background-image: linear-gradient(250deg, #443FE4 , #2394E0);
+    color: #ffffff;
+
+ 
     border:1px solid #2394E0;
     transition: .5s all;
     
@@ -335,12 +336,17 @@ color:#2394E0;
 
 }
 .pakageBox .days{
-    font-size: 24px;
-    font-family: 'Aileron-Regular'
+    font-size:24px;
+    font-family: 'Aileron-Regular';
+    color:#353637
 }
 .pakageBox .days span{
     font-size:16px;
     font-family: 'Avenir';
+    color:#677294;
+}
+.pakageBox .price span{
+    font-size:14px;
 }
 .pakageBox p{
 font-size:16px;
@@ -348,7 +354,7 @@ font-family: 'Avenir-Medium';
 
 }
 .contactBtn.joinBtn:hover{
-    color:#007bff;
+    color:#2394E0
 }
 #screenShots{
     background-image: url("../images/bgscreen.png");
@@ -538,9 +544,9 @@ background-color: #2394E0;;
 }
 .joinBtn:hover{
 background-color:white;
-color: #443FE4 ;
+color: #255ef5 ;
 
-border: solid 1px #443FE4;
+border: solid 1px #255ef5;
 transition: .5s all;
 }
 #Blog{
@@ -737,7 +743,7 @@ color:#5842dd
             position: relative;
         }
         .footerLogo{
-            width:100px;
+            width:45px;
             margin-bottom:15px;
         }
         .newSP{

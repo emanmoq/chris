@@ -96,7 +96,7 @@ jQuery(function ($) {
   });
   $('.BlogCarousel').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 11,
     nav: false,
     responsive: {
       0: {
@@ -143,7 +143,27 @@ jQuery(function ($) {
    $(".navbar-toggler").click(function(){
        $(".overlay").css("display","block");
    });
+   $('.up a').on('click', function () {
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
+  });
+     
+  function onScroll(event){
+			
+    var scrollPosition = $(document).scrollTop();
+    $('.nav-item a[href^="#"').each(function () {
+      console.log($(this).attr('href')); 
+      var refElement = $($(this).attr("href"));
+      if (refElement.length&&refElement.position().top-200 <= scrollPosition) {
+      $('.nav-link').removeClass("active");
+      $(this).addClass("active");
+      }
 
+      else{
+      $(this).removeClass("active"); 
+      }
+  
+    });
+    }
 
 });
 
