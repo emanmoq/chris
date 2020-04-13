@@ -692,9 +692,10 @@ color:#5842dd
         color: #677294;}
         textarea{
             resize: none;
-            opacity: 0.68;
-            font-size: 12px !important;
+            
+            font-size: 1rem !important;
             font-weight: 500;
+            color: #495057 !important;
         }
         .sendMessage{
             padding:8px 19px;
