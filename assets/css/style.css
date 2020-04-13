@@ -2,6 +2,18 @@
     font-family: 'Avenir';
     src: url("../Fonts/AEH.ttf");
 }
+@font-face{
+    font-family: 'Aileron';
+    src: url("../Fonts/Aileron-Bold.otf");
+}
+@font-face{
+    font-family: 'Avenir-Medium';
+    src: url("../Fonts/Avenir-Medium.ttf");
+}
+@font-face{
+    font-family: 'Aileron-Regular';
+    src: url("../Fonts/Aileron-Regular.otf");
+}
 
 ul{
     margin:0;
@@ -17,7 +29,7 @@ img{
     width:100%;
 }
 .logo{
-    width:210px;
+    width:146px;
     transition: .5s all;
 }
 .logo:hover{
@@ -33,29 +45,7 @@ body{
     font-family: 'Avenir';
 
 }
-.verticalSocial{
-    position: fixed;
-    left:0;
-    top:384px;
-    z-index: 99999999;
-}
 
-.verticalSocial ul li{
-    padding:10px 22px;
-}
-.verticalSocial ul li:hover{
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-   box-shadow: 0 2px 13px 0 rgba(156, 0, 65, 0.04);
-   background-image: linear-gradient(233deg, #853fe4 122%, #5842dd 10%);
-}
-.verticalSocial ul li:hover a{
-    color:white;
-}
-.verticalSocial ul li a{
-    color:#bdc9d9;
-    font-size:15px;
-}
 .navbar-expand-lg .navbar-nav .nav-link {
     font-family: Avenir;
     font-size: 14px;
@@ -107,8 +97,12 @@ body{
     position: absolute;
     top:0;
     right:0;
-    width:58%;
+    width:96%;
     z-index: -1;
+    height:600px;
+}
+.bigBackground img{
+    height:100%;
 }
 .bigBackground:hover {
 top:50px;
@@ -121,6 +115,8 @@ top:50px;
 #heroSection{
     padding-top:150px;
     padding-bottom:128px;
+    position: relative;
+    margin-bottom:100px;
 }
 .heroDetails{
     font-size: 16px;
@@ -130,10 +126,10 @@ top:50px;
 }
 .contactBtn{
  
-    box-shadow: 0 2px 35px 0 rgba(91, 87, 208, 0.7);
+    box-shadow: 0 2px 13px rgba(35, 148, 224, .5);
     width: 151px;
     border-radius: 24.5px;
-    background-image: linear-gradient(250deg, #853fe4 121%, #5842dd 12%);
+    background-image: linear-gradient(250deg, #443FE4 , #2394E0);
     font-weight: 900;
     color: #ffffff;
     text-align: center;
@@ -141,25 +137,13 @@ top:50px;
     transition: .5s all;
 }
 .contactBtn:hover{
-    color: #5842dd;
+    color: #2394E0;
     background-color: #ffffff;
     background-image: none;
-    border:1px solid #5842dd;
+    border:1px solid #2394E0;
     transition: .5s all;
     
 
-}
-#counter{
-    padding:43px 0;
-}
-.counterNum{
-    background-image: linear-gradient(230deg, #853fe4 122%, #5842dd 10%);
-    font-size: 47px;
-    font-weight: 700;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-right:-1px;
 }
 .categ{
     font-size: 17px;
@@ -180,13 +164,22 @@ top:50px;
     font-weight: 500;
     text-align: center;
     color: #677294;
+    font-family: "Avenir-Medium";
 }
 .servicesSec{
     margin-top:86px;
 }
 .serviceIcon{
     margin:0 auto;
+    padding:10px;
 }
+.serviceIcon .serviceImg{
+ width:80%;
+    margin: 0 auto;
+    vertical-align: middle;
+    line-height: 22px;
+}
+
 .serviceIcon{
     color:white;
     border-radius: 50%;
@@ -200,7 +193,7 @@ top:50px;
 .serviceCont h4{
     font-size: 18px;
     font-weight: 700;
-    color: #222d39;
+    color: #222D39;
     margin-top:15px;
     margin-bottom: 10px;
 }
@@ -223,66 +216,285 @@ top:50px;
     box-shadow: 0 2px 42px 0 rgba(245,217,135,.7)
 
 }
-#ourProjects{
-    padding:92px 0 62px;
+#steps{
+    padding:60px 0 100px;
+    background-image:linear-gradient(45deg,#2394E0,#4944E9) ;
+    color:white;
 }
-.projectSection{
-    margin-top:45px;
-    text-align: center;
+#steps .sectionTitle{
+    color:white;
+    font-size:31px;
+}
+#steps .sectionPar{
+    color:white;
+}
+#steps .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -62px;
 
 }
-#projectTabs {
-    margin-bottom:26px;
+#steps .owl-nav  button{
+    width: 49px;
+    height: 49px;
+    background-color: white !important;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .5s;
+
 }
-#projectTabs li {
-    font-size: 15px;
-    font-weight: 500;
-    color: #677294;
-    display:inline-block;
-    padding:13px;
+#steps .owl-nav  button:hover{
+    background-color:rgba(255,255,255,.2) !important;
+    transition: .5s;
+    
+}
+#steps .owl-nav button:hover i{
+    color:white;
+}
+#steps .owl-nav  button i{
+    color:#2F5BEA;
+    font-size:20px;
+}
+
+.stepsslider{
+    margin-top:107px;
+}
+.stepDetails{
+    display: inline-block;
+    width:45%;
+    margin-top:55px;
+}
+#howTo {
+    padding:125px 0 90px;
+    background-color: white;;
+}
+.howTosec span{
+font-size:13px;
+font-family:'Aileron';
+margin-bottom:15px;
+}
+.howToCon{
+    margin-top:77px;
+}
+.moreVideos {
+    margin-top:46px;
+    background-color:white;
+    color:#2394E0;
+    border:.5px solid #2394E0;
+    width:151px;
+    border-radius:24.5px;
+font-size: 16px;
+box-shadow: 0 2px 13px rgba(35, 148, 224, .5);
+transition: all .5s;
+}
+.moreVideos:hover{
+    color:white;
+    background-color:#2394E0;
+    transition: all .5s;
+}
+.howToVideo{
+    width:100%;
+    border-radius: 20px;
+    overflow: hidden;
+    height:322px;
+}
+iframe{
+    width: 100%;
+    height: 100%;;
+}
+#Packages {
+    padding:150px 0 220px;
+    background-color:#F6F8F9;
+    position: relative;
+
+}
+.pakageBox{
+    background-color:white;
+    border:15px;
+    padding:28px 45px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 22px  14px rgba(235, 235, 235, .5)
+}
+.packagesCon{
+    position: absolute;
+    width:100%;
+    top:66%;
+
+}
+.pakageBox h2{
+    font-size:24px;
+    font-family:'Aileron-Regular'
+}
+.pakageBox .price{
+color:#2394E0;
+  font-family: 'Avenir';
+  font-size:18px;
+  margin-top:15px;
+  margin-bottom:17px;
+
+}
+.pakageBox .days{
+    font-size: 24px;
+    font-family: 'Aileron-Regular'
+}
+.pakageBox .days span{
+    font-size:16px;
+    font-family: 'Avenir';
+}
+.pakageBox p{
+font-size:16px;
+font-family: 'Avenir-Medium';
+
+}
+.contactBtn.joinBtn:hover{
+    color:#007bff;
+}
+#screenShots{
+    background-image: url("../images/bgscreen.png");
+    margin-top:250px;
+    padding-top:120px;
+    padding-bottom:152px;
+}
+.screenshotItem {
+    position: relative;
+    border-radius: 10px;
+    overflow:hidden;
     cursor: pointer;
+    z-index:0;
 }
-#projectTabs .active{
-    color: #6d41e0;
+.screenShotsSlider{
+    margin-top:85px;
     position: relative;
 }
-#projectTabs .active:before{
-position: absolute;
-content: "";
-bottom:-1px;
-left:0;
-height:2px;
-width:100%;
-background-color: #6d41e0;
+.screenShotsSlider .owl-nav{
+    position: absolute;
+    width: 100%;
+    top:45%;
+
 }
-.galleryItemImg img{
-border-radius: 30px;
-width:100%;
-height:100%;
+.screenshotItem{
+    box-shadow:10px 22px 14px rgba(199, 199, 199, .2)
+
 }
-.galleryItemImg figure{
-    height:228px;
+
+.screenShotsSlider.owl-carousel .owl-stage-outer {
+    height:420px;
 }
-.seeMoreBtn{
-    width: 151px;
-    border-radius: 24.5px;
-    border: solid 0.5px #6d41e0;
-    background-color: #f9f9fc;
-    color:#6d41e0;
-    font-size: 16px;
-    font-weight: 900;
-    box-shadow: 0 2px 13px 0 rgba(156, 0, 65, 0.04);
-    margin-top:36px;
+.screenshotItem:before{
+    content:"";
+    position: absolute;
+    background-color:rgba(0,0,0,.2);
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:1;
+    right:0;
+    display: none;
 }
-.seeMoreBtn:hover{
-    color: #f9f9fc;
-    background-color:#6d41e0;
+.screenshotItem:hover:before{
+    display: block;
+}
+.screenShotsSlider .owl-nav button{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: white !important;
+    border-radius: 50%;
+    left: -26px;
+    border:1px solid rgba(0,0,0,.2) !important;
+    
+}
+.screenShotsSlider .owl-nav button.owl-next{
+    right:-26px;
+    left:auto;
+}
+.screenShotsSlider .owl-nav button i{
+    font-size:18px;
+    color:#007bff
+}
+.screenShotsSlider .owl-nav button:hover{
+    background-color:#007bff !important ;
+}
+.screenShotsSlider .owl-nav button:hover i{
+color:white !important ;
+}
+#sales{
+    padding-top:110px;
+    padding-bottom:270px;
+    background-color: white;;
+}
+.salesSlider{
+    margin-top:41px;
+}
+.salesSlider .owl-dots{
+    width:100%;
+    position: absolute;
+    text-align: center;
+}
+.salesSlider .owl-dots .owl-dot{
+    width:30px;
+    height:4px;
+    margin:2px;
+    background-color:#D8D8D8;
+border-radius: 5.5px;
+margin-top:43px;
+}
+.salesSlider .owl-dots .owl-dot.active{
+background-color: #2394E0;;
+}
+.salesSliderBox{
+    background-color:white;
+    border-radius: 15px;
+    border:1px solid #E9E9E9;
+    padding:23px 30px;
+}
+.salesImg{
+    height:158px;
+    width:195px;
+    margin:0 auto;
+    margin-bottom:25px;
+}
+.salesImg img{
+    height:100%;
+}
+.newPrice{
+    color:#222D39;
+    font-size:15px;
+    font-family: 'Aileron-Regular';
+}
+.oldPrice{
+    color: #c4c4c4;
+    position: relative;
+    margin-left:5px;
+    font-size:15px;
+    font-family: 'Aileron-Regular';
+}
+.oldPrice:before{
+    position: absolute;
+    width:100%;
+    height:1px;
+    background-color:#c4c4c4;
+    content:"";
+    top:50%;
+    font-family: 'Aileron-Regular';
+}
+.priceSales p{
+    font-size:15px;
+    color:#677294;
+    margin-top:20px;
+}
+.saler{
+    width:60px;
+    height:20px;
+    margin-top:20px;
+
 }
 .scrollNav {
     top: 0 !important;
     z-index: 555;
     animation-duration: 1s;
-    background: rgb(255, 255, 255) !important;
+    background-image:linear-gradient(45deg,#2394E0,#4944E9) !important;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
     transition: 1s all;
@@ -293,168 +505,13 @@ height:100%;
 .scrollNav .navbar{
     padding:20px;
 }
-.scrollNav .navbar-expand-lg .navbar-nav .nav-link {
-    color:#5842dd;
-}
 
-.scrollNav .navbar-expand-lg .navbar-nav .nav-link:before,.scrollNav .nav-link.active:before{
-    background-color:#5842dd;
-}
-#TestiMonials{
-    background-color: #f9f9fc;
-    margin-top:-20%;
-    position: relative;
-    z-index: -1;
-    padding-top:350px;
-    padding-bottom:250px;
-}
-
-.carouselItem{
-    border-radius: 30px;
-    box-shadow: 0px 10px 10px 0 rgba(235, 235, 235, 0.5);
-    background-color: #ffffff;
-    padding:40px;
-}
-.testoImg{
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    overflow: hidden;
-    float:left;
-    margin-right:15px;
-}
-.testInfo{
-    float:left;
-}
-.testInfo h4{
-
-    font-size: 14px;
-    font-weight: 700;
-    color: #000000;
-    margin-bottom:10px;
-}
-.testInfo span{
-    font-size: 13px;
-    font-weight: 500;
-    color: #666666;
-}
-.testiDesc p{
-
-    font-size: 14px;
-    font-weight: 500;
-    color: #666666;
-}
-.testiDesc{
-    margin-top:22px;
-}
-.testCar{
-    background-color: transparent;
-    margin-top:-50%;
-    z-index: 1;
-}
-.TestiMonialsCarusel{
-
-}
-.TestiMonialsCarusel  .owl-nav button{
-    color: #6d41e0 !important;
-    border:1px solid #c4c4c4 !important;
-    border-radius:50%;
-    width:43px;
-    height:43px;
-    line-height: 22px;
-    position: absolute;
-    left:0
-}
-.TestiMonialsCarusel  .owl-nav{
-    position: absolute;
-    top: 50%;
-}
-.TestiMonialsCarusel .owl-stage-outer{
-    padding:30px 5px
-}
-
-.TestiMonialsCarusel  .owl-nav button span{
-
-    font-size: 28px !important;
-}
-.TestiMonialsCarusel .owl-nav button:hover{
-  background-color:#6d41e0 !important;
-  color:white !important;
-
-}
-.TestiMonialsCarusel .owl-nav .owl-prev{
-left:0 !important;
-}
-.TestiMonialsCarusel .owl-nav .owl-next{
-    right:0 !important;
-    }
-    .TeamcarouselItem{
-        margin-top:45px;
-    }
-    .TeamcarouselItem figure{
-        border-radius: 30px;
-        overflow:hidden;
-        position: relative;
-        width:100%;
-        height:220px;
-        
-    }
-    #Team{
-        padding-top:201px;
-        padding-bottom:92px;
-    }
-    .TeamcarouselItem figure img{
-        height:100%;
-    }
-    .TeamcarouselItem figure:before{
-content:"";
-position: absolute;
-opacity: 0;
-left: 20%;
-right: 20%;
-top: 20%;
-bottom: 20%;
-border-radius: 30px;
-background-image: linear-gradient(222deg, #853fe4 123%, #5842dd 9%);
-transition: .5s all;
-}
-.TeamcarouselItem:hover figure:before{
-opacity: 0.69;
-top:0;
-left:0;
-bottom:0;
-right:0;
-transition: .5s all;
-}
-.TeamcarouselItem:hover figure figcaption{
-    opacity: 1;
-    transition:.5s;
-}
-.TeamcarouselItem figure figcaption{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    margin: -7px 0 0 0;
-    opacity:0
-    ;  transition:.5s;
-}
-.TeamcarouselItem figcaption h4{
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom:3px;
-}
-.TeamcarouselItem figcaption span{
-    color:white;
-    font-size:13px;
-}
 #join{
-    background-image:url("../images/A1.png");
+    background-image:url("../images/joinbg.png");
     padding:30px 0;
     color:white;
+    position: relative;
+    background-size: cover;
 }
 #join h4{
     font-size: 31px;
@@ -481,8 +538,9 @@ transition: .5s all;
 }
 .joinBtn:hover{
 background-color:white;
-color:#6d41e0;
-border: solid 1px #6d41e0;
+color: #443FE4 ;
+
+border: solid 1px #443FE4;
 transition: .5s all;
 }
 #Blog{
@@ -513,7 +571,7 @@ margin-top:8px;
 }
 .card img{ 
 
-border-radius: 30px;
+border-radius: 20px;
 }
 .card-title{
     font-size: 19px;
@@ -527,7 +585,7 @@ border-radius: 30px;
 color:#5842dd
 }
 .readMore:hover  {
-    color:#5842dd
+    color:white
 }
 .card-text{
     font-size: 14px;
@@ -542,16 +600,21 @@ color:#5842dd
 .readMore{
     margin:0;
     font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    line-height: 33px;
+   
     color: #000000;
     margin-right:5px;
+    border-radius: 24px;
+    border :1px solid #2394E0;
+    color:#2394E0;
+    font-family: 'Aileron-Regular';
+    width:112px;
+    display: block;
+    height:36px;
+    text-align: center;
 }
 .readMore:hover{
-    color:#6d41e0
+    background-color:#2394E0
 }
 .card i{
     font-size: 13px;;
@@ -600,7 +663,7 @@ color:#5842dd
         background-color: #ffffff;
     }
     .form-control:focus{
-        border: solid 1px #6d41e0;
+        border: solid 1px #2394E0;
         box-shadow: none;
     }
     .form-control.phoneEmail{
@@ -625,7 +688,7 @@ color:#5842dd
         .sendMessage{
             padding:8px 19px;
             border-radius: 24.5px;
-            background-image: linear-gradient(251deg, #853fe4 121%, #5842dd 12%);
+            background-image: linear-gradient(45deg, #443FE4, #2394E0 );
             text-align: center;
             font-size:15px;
             color:white;
@@ -635,52 +698,19 @@ color:#5842dd
         .sendMessage:hover{
             background-image:none;
             background-color:transparent;
-            color:#6d41e0;
-            border:solid 1px #6d41e0;
+            color:#2394E0;
+            border:solid 1px #2394E0;
             transition: .5s all;
         }
-        #Consultations{
-            padding-top:92px;
-            padding-bottom:27px;
-        }
-        .ConsultCarousel{
-            margin-top:49px;
-            margin-bottom:90px;
-        }
-        .ConsultCarousel .owl-dots{
-            position: absolute;
-            left: 49%;
-            bottom: -17px;
-        }
-        .ConsultCarousel .owl-dots .owl-dot{
-            width: 8px;
-            height: 8px;
-            background-color: #d8d8d8;
-            border-radius: 50%;
-            margin-right:14px;
-        }
-        .ConsultCarousel .owl-dots .owl-dot.active{
-            background-color: #6d41e0;
-        }
-  
-        .ConsultCarouselItem {
-            transition: .5s all;
-                    }
-        .ConsultCarouselItem:hover {
-transform:scale(1.2);
-transition: .5s all;
-        }
-        .ConsultCarouselItem .owl-carousel .owl-stage-outer{
-            padding:10px;
-        }
+
         .subscribe{
             position: relative;
         }
         .subscribeBtn{
            width:30%;
            border-radius: 25px;
-           background-image: linear-gradient(252deg, #853fe4 121%, #5842dd 12%);
-           color:white;
+           background-image: linear-gradient(45deg, #443FE4, #2394E0 );
+                      color:white;
            text-align: center;
            position: absolute;
            right: 4px;
@@ -697,7 +727,7 @@ transition: .5s all;
             
         }
         footer{
-            background-image:url("../images/f1.png");
+            background-image: linear-gradient(45deg, #443FE4, #2394E0 );
             width:100%;
             padding-top:105px;
             background-size: cover;
@@ -706,7 +736,7 @@ transition: .5s all;
             position: relative;
         }
         .footerLogo{
-            width:45px;
+            width:100px;
             margin-bottom:15px;
         }
         .newSP{
@@ -776,6 +806,9 @@ display: inline-block;
             transition: .5s all;
           
         }
+        .footerrow{
+            margin-top:25px;
+        }
         .up:hover i{
 background-color:white;
 color:#6d41e0;
@@ -790,14 +823,181 @@ transition: .5s all;
     font-size: 12px;
     font-weight: 500;
 }
-@media(min-width:360px) and (max-width:767px){
+.mobileImg{
+    width:50%;
+    position: absolute;
+    right:0;
+}
+.loginLink{
+    padding:11px;
+}
+.loginLink a{
+    color:white;
+}
+.loginModal .modal-dialog{
+    width:402px;
+}
+.loginModal .modal-dialog .modal-content{
+    padding:40px 0;
+
+}
+.loginModal .form-group{
+    width:100%;
+   margin-bottom:16px;
+}
+.loginModal .form-control{
+    border:1px solid #EBEBEB;
+    border-radius:10px; 
+    height:49px;
+}
+.loginModal .modal-title{
+    color:#222D39;
+    font-size:20px;
+    margin-bottom:22px;
+}
+.modal-header{
+    border-bottom: 0;
+}
+.loginModal .forgetLink{
+    color:#222D39;
+    text-align: right;
+    display: block;
+}
+.loginModal .forgetLink:hover{
+    color:#2394E0;
+ 
+    
+}
+.loginModal .close,.navbar .close{
+    opacity: 1;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.loginModal .close span{
+
+        display: inline-block;
+        background: #E2E2E2;
+        /* padding: 10px; */
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        text-align: center;
+        line-height: 34px;
+        color:white;
+
+}
+.subHeader{
+    background-image:url("../images/subheader.png");
+    padding-top:40px;
+    padding-bottom:56px;
+    width:100%;
+    background-size:cover;
+
+}
+.pageTitle{
+    color:white;
+    font-size:50px;
+    font-family: 'Avenir';
+    margin-top:60px;
+}
+.account-image{
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.account-name,.account-image{
+    display: inline-block;
+}
+.account-name p{
+font-size:14px;
+color:white;
+font-family: 'Aileron-Regular';
+margin:0;
+}
+.account-name h3{
+    color:white;
+    font-size:14;
+
+}
+#subBody{
+    background-color: white;
+    width:100%;
+    padding:60px 0;
+}
+
+.subBox.pakageBox{
+    border-radius: 15px;
+    border:1px solid #EBEBEB;
+    padding:40px 35px;
+    text-align: left;
+    box-shadow: none;
+    margin-bottom:45px;
+
+}
+.subBox.pakageBox p{
+    max-width: 80%;;
+}
+.subInfoSec{
+    border-top:1px solid #EBEBEB;
+    padding-top:50px;
+}
+.subInfoSec p{
+    font-size:16px;
+    font-family: 'Avenir-Medium';
+}
+.subForm{
+    margin-top:30px;
+}
+.subForm h5{
+    font-size:20px;
+    font-weight: 500;
+    color:#677294;
+
+}
+.subForm .form-group{
+    width:45%;
+    display: inline-block;
+    margin-top:20px;
+
+}
+.subForm .form-group .form-control{
+    width:100%;
+    border-radius: 10px;
+}
+.selectric-wrapper{
+    background-image: linear-gradient(to bottom, #F4F4F4, #FFFFFF );
+    border-radius: 10px;
+    border:1px solid #EBEBEB;
+}
+.selectric-items li:hover {
+    color: #677294;
+    background-image: linear-gradient(to bottom, #F4F4F4, #FFFFFF );
+}
+.selectric-items li.selected ,.selectric-items li{
+    color: #677294;
+}
+.mrformControl{
+    margin-right:20px;
+ 
+}
+.form-control:disabled, .form-control[readonly]{
+    background-image: linear-gradient(to bottom, #F4F4F4, #FFFFFF );
+    border-radius: 10px;
+    border:1px solid #EBEBEB;
+}
+.paymentMethd{
+    margin-top:70px;
+}
+@media(min-width:320px) and (max-width:767px){
     .navbar{
         padding:10px;}
     .nav-link.active:before{
         display: none;
     }
     .logo {
-        width: 159px;}
+        width: 130px;}
         .HeroTitle {
             font-size: 24px;}
             #heroSection{
@@ -812,5 +1012,174 @@ transition: .5s all;
     }
     .scrollNav{
         height:65px;
+    }
+
+    .loginModal .modal-dialog{
+        width:100%;
+        margin:0 auto;
+    }
+    .mobileMenu{
+        cursor: pointer;
+        width: 25px;
+        height: 17px;
+        margin: auto;
+    }
+    button.navbar-toggler {
+        position: relative;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 0;
+        opacity: .7;
+        border:1px solid white;
+        text-align: center;
+    }
+    .mobileMenu i{
+        background-color: white;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 91%;
+        height: 2px;
+        margin-bottom: 6px;
+}
+.close{color:white;}
+.mobileNav{
+    padding:10px;
+}
+
+.overlay{
+    background-color:#000;
+    opacity: .2;
+    z-index: 222;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    right:0;
+    position: absolute;
+    display: block;
+    }
+.mobileNav nav.navbar {
+    width: 100%;   
+    position: absolute; 
+    z-index: 999999;
+    top: 0;  
+    right: 0;
+    padding:0;
+
+}
+.mobileNav .navbar-collapse{
+    background-color: #255ef5;
+    text-align: center;
+    padding:30px 0;
+}
+.mobileImg {
+    display: none;
+}
+.stepDetails{
+    margin-top:0;
+}
+.stepImg {
+    width:40%;
+}
+#steps .owl-nav {
+
+    top: -62px;
+    right: 32%;}
+    #steps .owl-nav button {
+        width: 30px;
+        height: 30px;}
+        .moreVideos {
+
+            display: block;
+            margin: 20px auto;}
+            .packagesCon {
+                position: relative;}
+                .pakageBox {
+                    background-color: white;
+                    border: 15px;
+                    padding: 10px;
+                    margin-bottom: 10px;}
+                   #Packages {
+                        padding: 20px 0;
+                    }
+    #screenShots{
+padding:20px 0;
+    }
+    .screenShotsSlider .owl-nav{
+        top:auto;
+     bottom: 116px;;
+     text-align: center;
+
+    }
+    .screenShotsSlider .owl-nav button, .screenShotsSlider .owl-nav button.owl-next {
+        left: auto;
+        right:auto;
+        position: relative;
+}
+#sales{
+    padding:20px 0;
+}
+.form-control.phoneEmail{
+    width:100%;
+    margin-right:0;
+}
+#screenShots{
+    margin-top:0
+}
+.subForm .form-group{
+    width:100%;
+    margin-top:20px;
+
+}
+.mrformControl{
+    margin:0;
+}
+#subBody{
+    padding:20px 0;
+}
+.subBox.pakageBox{
+    padding:10px;
+}
+.pageTitle {
+    font-size:29px;
+}
+.account-image{
+    width:30px;
+    height:30px;
+}
+.account-name p,
+.account-name h3{
+    font-size:12px;
+}
+.subHeader .logo{
+    width:100px;
+}
+.pageTitle{
+    margin-top:10px;
+}
+}
+@media(min-width:768px)and (max-width:1024px){
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+}
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.logo{
+    width:100%;
+}
+.navbar-brand {
+    margin:0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+
+ 
+    padding: 6px;}
+    .loginLink{
+        padding: 6px;
+        font-size:14px;
     }
 }
