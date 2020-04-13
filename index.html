@@ -66,6 +66,8 @@
           </ul>
           <div class="loginLink">
             <a class="login" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+            <a class="login" href="#" data-toggle="modal" data-target="#loginModal">Register</a>
+
           </div>
         </div>
       </nav>
@@ -74,7 +76,7 @@
 
       <nav class="navbar navbar-expand-lg clearfix d-lg-block d-md-block d-none ">
         <div class="row ">
-          <div class="col-lg-3 col-md-2">
+          <div class="col-lg-2 col-md-1">
             <div class="logo float-left">
               <a class="navbar-brand " href="index.html"> <img src="assets/images/logo.png" alt=""> </a>
             </div>
@@ -108,9 +110,15 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-1 col-lg-2">
-            <div class="loginLink float-right">
-              <a class="login" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+          <div class="col-md-2 col-lg-3">
+            <div class="float-right">
+              <div class="loginLink" data-toggle="modal" data-target="#loginModal">
+                <a class="login" href="javascript:;">Login</a>
+              </div>
+              <div class="loginLink " data-toggle="modal" data-target="#regModal">
+
+                <a class="login" href="javascript:;">Register</a>
+              </div>
             </div>
           </div>
         </div>
@@ -134,9 +142,19 @@
               We develop solutions and software systems that help to optimize a company's staff time, skills, and
               overall business operations and infrastructure.
             </p>
-            <a href="#" class="btn contactBtn"> Contact us </a>
+            <a href="#Careers" class="btn contactBtn"> Contact us </a>
+          </div>
+          <div class="downloadapp">
+          <h5>Download App From</h5>
+          <div class="googlePlay">
+            <img src="assets/images/google.png" alt="">
+          </div>
+          <div class="googlePlay">
+            <img src="assets/images/appStore.png" alt="">
+          </div>
           </div>
         </div>
+        
         <div class="mobileImg float-right">
           <img src="assets/images/mobileImg.png" alt="">
         </div>
@@ -344,7 +362,7 @@
               <h6 class="days">1-5/<span>days</span></h6>
               <p>Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business.
                 Conveniently innovate compelling internal.</p>
-              <a href="SubscriptionPlans1.html" class="btn contactBtn"> join</a>
+              <a href="SubscriptionPlans1.html" class="btn  joinBtn "> Join</a>
             </div>
           </div>
           <div class=" col-lg-4 col-md-6">
@@ -354,7 +372,7 @@
               <h6 class="days">1-5/<span>days</span></h6>
               <p>Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business.
                 Conveniently innovate compelling internal.</p>
-              <a href="SubscriptionPlans.html" class="btn contactBtn"> join</a>
+              <a href="SubscriptionPlans.html" class="btn  joinBtn"> Join</a>
             </div>
           </div>
         </div>
@@ -557,9 +575,9 @@
               <div class="card">
                 <img src="assets/images/6.png" class="card-img-top" alt="...">
                 <div class="BlogHeader">
-                  <span>jan 21 2019</span>
-                  <span>24 comment</span>
-                  <span>10 share</span>
+                  <span>Jan 21 2019</span>
+                  <span>24 Comment</span>
+                  <span>10 Share</span>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Doloremque velit sapien
@@ -574,9 +592,9 @@
               <div class="card">
                 <img src="assets/images/7.png" class="card-img-top" alt="...">
                 <div class="BlogHeader">
-                  <span>jan 21 2019</span>
-                  <span>24 comment</span>
-                  <span>10 share</span>
+                  <span>Jan 21 2019</span>
+                  <span>24 Comment</span>
+                  <span>10 Share</span>
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">Doloremque velit sapien
@@ -719,7 +737,39 @@
               <input type="password" class="form-control" placeholder="password">
             </div>
             <a href="#" class=" forgetLink"> Forgot password?</a>
-            <button type="submit" class="btn contactBtn text-center"> log in</button>
+            <button type="submit" class="btn joinBtn text-center"> log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade loginModal text-center" id="regModal" tabindex="-1" role="dialog" aria-labelledby="register"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <h5 class=" text-center" id="register">Registeration</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Business Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Contact Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Address">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="PHONE Number">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <button type="submit" class="btn joinBtn text-center"> Register</button>
           </form>
         </div>
       </div>
