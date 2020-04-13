@@ -15,6 +15,9 @@
     src: url("../Fonts/Aileron-Regular.otf");
 }
 
+header{
+    background-image: transparent;
+}
 ul{
     margin:0;
     padding:0;
@@ -503,10 +506,11 @@ background-color: #2394E0;;
     background-image:linear-gradient(45deg,#2394E0,#4944E9) !important;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
-    transition: 1s all;
+    transition: 1s background-image;
     left: 0;
     width:100%;
     height:90px;
+    opacity: 0;
 }
 .scrollNav .navbar{
     padding:20px;
@@ -1025,8 +1029,26 @@ margin:0;
     margin-top:20px;
 }
 .googlePlay{
-    margin:10px;
-    width:100px;
+    display: inline-block;
+    margin-right:10px;
+    width:150px;
+    border-radius: 5px;
+}
+.paymentMethd .form-group{
+    display: block;
+}
+.paymentCard{
+    margin-right:10px;
+    display: inline-block;
+    width:50px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.expiration {
+    border: 1px solid #bbbbbb;
+}
+.expiration input {
+    border: 0;
 }
 @media(min-width:320px) and (max-width:767px){
     .navbar{
