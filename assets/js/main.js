@@ -9,15 +9,13 @@ jQuery(function ($) {
     scrollTop = $(window).scrollTop();
 
     if (scrollTop > $('header').height()) {
-      $(".scrollNav").animate({ opacity:1 }, 500);
       $('header').addClass('scrollNav');
+      $('.bigBackground').css('top', '-90');
     }
 
     else {
       $('header').removeClass('scrollNav');
-      $(".scrollNav").css("opacity","0");
-
-      
+      $('.bigBackground').css('top', '0');
 
     }
 
@@ -138,38 +136,38 @@ jQuery(function ($) {
     $(".overlay").css("display", "none");
   }
   );
-  $(".overlay").click(function(){
+  $(".overlay").click(function () {
     $('.navbar-collapse').collapse("hide");
-    $(".overlay").css("display","none");
-   });
-
-   $(".navbar-toggler").click(function(){
-       $(".overlay").css("display","block");
-   });
-   $('.up a').on('click', function () {
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top  }, 1000);
+    $(".overlay").css("display", "none");
   });
-     
-  function onScroll(event){
-			
+
+  $(".navbar-toggler").click(function () {
+    $(".overlay").css("display", "block");
+  });
+  $('.up a').on('click', function () {
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+  });
+
+  function onScroll(event) {
+
     var scrollPosition = $(document).scrollTop();
     $('.nav-item a[href^="#"').each(function () {
-      console.log($(this).attr('href')); 
+      console.log($(this).attr('href'));
       var refElement = $($(this).attr("href"));
-      if (refElement.length&&refElement.position().top-200 <= scrollPosition) {
-      $('.nav-link').removeClass("active");
-      $(this).addClass("active");
+      if (refElement.length && refElement.position().top - 200 <= scrollPosition) {
+        $('.nav-link').removeClass("active");
+        $(this).addClass("active");
       }
 
-      else{
-      $(this).removeClass("active"); 
+      else {
+        $(this).removeClass("active");
       }
-  
+
     });
-    }
-    $(".contactbtn").on('click', function () {
-        $('html, body').animate({ scrollTop: $(this.hash).offset().top - 250 }, 1000);
-      });
+  }
+  $(".contactbtn").on('click', function () {
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top - 250 }, 1000);
+  });
 
 });
 
