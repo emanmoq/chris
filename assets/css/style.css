@@ -55,6 +55,14 @@ body{
     padding:11px;
     position: relative;
 }
+.scrollNav .navbar-expand-lg .navbar-nav .nav-link {
+
+    color: black;
+
+}
+.scrollNav  .nav-link:before{
+    background-color: black;
+}
 .nav-link:before{
     position: absolute;
     content: "";
@@ -331,7 +339,7 @@ iframe{
 .pakageBox .price{
 color:#2394E0;
   font-family: 'Avenir';
-  font-size:18px;
+  font-size:23px;
   margin-top:15px;
   margin-bottom:17px;
 
@@ -506,7 +514,7 @@ background-color: #2394E0;;
     top: 0 !important ;
     z-index: 555;
     transition-duration: 1s;
-    background-color:#255ef5;
+    background-color:white;
     position: fixed !important;
     box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 7px 3px;
     left: 0;
@@ -515,6 +523,9 @@ background-color: #2394E0;;
 }
 .scrollNav .navbar{
     padding:20px;
+}
+.scrollNav .nav-link{
+    color:black
 }
 
 #join{
@@ -858,10 +869,26 @@ text-align: center;
 border-radius: 25px;
 cursor: pointer;
 }
+.scrollNav .loginLink{
+    border:1px solid #255ef5;
+}
 
 .loginLink a{
     color:white;
  
+}
+.scrollNav .loginLink a{
+    color: #255ef5;
+
+}
+.scrollNav .loginLink:hover{
+    border:1px solid #255ef5;
+    background-color:#255ef5 ;
+}
+
+.scrollNav .loginLink:hover a{
+    color: white;
+
 }
 .loginLink:hover{
 background-color:white;
