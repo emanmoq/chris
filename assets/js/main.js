@@ -173,6 +173,10 @@ jQuery(function ($) {
   $(".contactbtn").on('click', function () {
     $('html, body').animate({ scrollTop: $(this.hash).offset().top - 250 }, 1000);
   });
+$(".forgetLink").click(function(){
+$(".modal").modal('hide');
+$("#forgetPass").modal('show');
 
+})
 });
 
