@@ -33,6 +33,9 @@ img{
     width:146px;
     transition: .5s all;
 }
+.logo .scrollLogo{
+    display:none
+}
 .logo:hover{
     transform: scale(1.1);
     transition: .5s all;
@@ -57,11 +60,11 @@ body{
 }
 .scrollNav .navbar-expand-lg .navbar-nav .nav-link {
 
-    color: black;
+    color: #222D39;
 
 }
 .scrollNav  .nav-link:before{
-    background-color: black;
+    background-color: #222D39;
 }
 .nav-link:before{
     position: absolute;
@@ -523,9 +526,6 @@ background-color: #2394E0;;
 }
 .scrollNav .navbar{
     padding:20px;
-}
-.scrollNav .nav-link{
-    color:black
 }
 
 #join{

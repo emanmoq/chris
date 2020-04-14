@@ -11,11 +11,16 @@ jQuery(function ($) {
     if (scrollTop > $('header').height()) {
       $('header').addClass('scrollNav');
       $('.bigBackground').css('top', '-90');
+      $('.basicLogo').css('display', 'none');
+      $('.scrollLogo').css('display', 'block');
+     
     }
 
     else {
       $('header').removeClass('scrollNav');
       $('.bigBackground').css('top', '0');
+      $('.basicLogo').css('display', 'block');
+      $('.scrollLogo').css('display', 'none');
 
     }
 
