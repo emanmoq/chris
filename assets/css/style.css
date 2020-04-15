@@ -121,7 +121,6 @@ top:50px;
 }
 .HeroTitle{
     font-size: 37px;
-    font-weight: 900;
     color: #222d39;
 }
 #heroSection{
@@ -169,7 +168,6 @@ top:50px;
 }
 .sectionTitle{
     font-size: 31px;
-    font-weight: 900;
     color: #222d39;
 }
 .sectionPar{
@@ -614,7 +612,6 @@ border-radius: 20px;
 }
 .card-title{
     font-size: 19px;
-    font-weight: 900;
     line-height: 1.53;
     color: #222d39;
     margin-bottom:4px;
