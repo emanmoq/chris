@@ -546,8 +546,7 @@ background-color: #2394E0;;
 }
 .joinBtn{
     border-radius: 24.5px;
-    background-image: linear-gradient(250deg, #443FE4 , #2394E0);
-    color: #ffffff;
+
     margin-top:14px;
     text-align: center;
     padding:13px 33px;
@@ -556,14 +555,15 @@ background-color: #2394E0;;
     transition: .5s all;
     box-shadow: 0 2px 13px rgba(35, 148, 224, .5);
 
-  
+    background-color:white !important;
+    color: #255ef5 ;
+    
+    border: solid 1px #255ef5;
 }
 .joinBtn:hover{
-background-color:white !important;
-color: #255ef5 ;
-background-image: none;
+    background-image: linear-gradient(250deg, #443FE4 , #2394E0);
+    color: #ffffff;
 
-border: solid 1px #255ef5;
 transition: .5s all;
 }
 #Blog{
@@ -717,18 +717,18 @@ color:#5842dd
         .sendMessage{
             padding:8px 19px;
             border-radius: 24.5px;
-            background-image: linear-gradient(45deg, #443FE4, #2394E0 );
             text-align: center;
             font-size:15px;
-            color:white;
             margin-top:30px;
             transition: .5s all;
-        }
-        .sendMessage:hover{
-            background-image:none;
             background-color:transparent;
             color:#2394E0;
             border:solid 1px #2394E0;
+        }
+        .sendMessage:hover{
+            background-image: linear-gradient(45deg, #443FE4, #2394E0 );
+            color:white;
+
             transition: .5s all;
         }
 
