@@ -534,6 +534,7 @@ background-color: #2394E0;;
     position: relative;
     background-size: cover;
 }
+
 #join h4{
     font-size: 31px;
     font-weight: 700;
@@ -555,10 +556,19 @@ background-color: #2394E0;;
     transition: .5s all;
     box-shadow: 0 2px 13px rgba(35, 148, 224, .5);
 
-    background-color:white !important;
-    color: #255ef5 ;
-    
+    background-color:transparent;
+        color: #255ef5 ;
     border: solid 1px #255ef5;
+}
+#join .joinBtn{
+    box-shadow: none;
+    border:1px solid white;
+    color:white;
+}
+#join .joinBtn:hover{
+    background-image: none;;
+    background-color: white;
+    color:#443FE4;
 }
 .joinBtn:hover{
     background-image: linear-gradient(250deg, #443FE4 , #2394E0);
